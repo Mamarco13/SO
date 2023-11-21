@@ -30,6 +30,8 @@ int main(int argc, char* argv[]){
     int entrada, salida;
     //bytes leidos/escritos
     int bytes = 80;
+    //contador de bloques 
+    int bl;
     //buffer del que veamos a leer y escribir
     char buffer[81];
     //vamos a guardar el bloque n para escribirlo en el fichero
@@ -78,4 +80,32 @@ int main(int argc, char* argv[]){
          write(salida, "\n", sizeof("\n"));
     }
 
+    //ESTA REGULAR LO ADICIONAL
+    /*Modificación adicional. ¿Cómo tendrías que modificar el programa para que una vez finalizada la escritura
+    en el archivo de salida y antes de cerrarlo, pudiésemos indicar en su primera línea el número de etiquetas
+    ''Bloque i'' escritas de forma que tuviese la siguiente apariencia?:
+    El número de bloques es <no_bloques>
+    Bloque 1
+    // Aquí van los primeros 80 Bytes del archivo pasado como argumento.
+    ..*/
+
+    //hacemos espacio para escribir el numero de etiquetas al principio del fcihero con lo que avanzamos al current file offset
+    lseek(salida,sizeof("El numero de bloques es 100"), SEEK_SET);
+
+    //for de escritura en salida
+    for(int i = 0; read(entrada, buffer, bytes); i++){
+        sprintf(bloque, "Bloque %d", i);
+        write(salida, bloque, sizeof(bloque));
+        write(salida,"\n", sizeof("\n"));
+        write(salida, buffer, bytes);
+        write(salida,"\n", sizeof("\n"));
+        bl = i;
+    }
+    //al terminar de escribir nos posicionamos al principio del fichero
+    lseek(salida,0,SEEK_SET);
+    //escribimos la linea con el numero de bloques
+    printf(bloque, "El numero de bloques es %d", bl);
+    //escribimos la frase al principio del fichero
+    write(salida, bloque,sizeof(bloque));
 }
+
