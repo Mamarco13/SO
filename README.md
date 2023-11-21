@@ -1,5 +1,5 @@
-# DDSI
-## Modulo 1
+# SO Modulo II
+### Modulo 1
 
 Consiste en 4 ejercicios divididos de la siguiente manera:
 
