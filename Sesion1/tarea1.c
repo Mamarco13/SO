@@ -1,16 +1,19 @@
 /*
 tarea1.c
 Trabajo con llamadas al sistema del Sistema de Archivos ''POSIX 2.10 compliant''
-Probar tras la ejecución del programa: $>cat archivo y $> od -c archivo
+Probar tras la ejecuciï¿½n del programa: $>cat archivo y $> od -c archivo
+cat archivo -> abcdefghijABCDEFGHIJ
+od -c archivo ->
+0000000   a   b   c   d   e   f   g   h   i   j  \0  \0  \0  \0  \0  \0
+0000020  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0  \0
+0000040  \0  \0  \0  \0  \0  \0  \0  \0   A   B   C   D   E   F   G   H
+0000060   I   J
+0000062
 */
 #include<unistd.h>
 #include<stdio.h>
 #include<stdlib.h>
-#include<sys/types.h>  	/* Primitive system data types for abstraction\
-			   of implementation-dependent data types.
-			   POSIX Standard: 2.6 Primitive System Data Types
-			   <sys/types.h>
-			*/
+#include<sys/types.h> 
 #include<sys/stat.h>
 #include<fcntl.h>
 #include<errno.h>
