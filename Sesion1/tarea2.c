@@ -1,6 +1,7 @@
 /*
 tarea2.c
 Trabajo con llamadas al sistema del Sistema de Archivos ''POSIX 2.10 compliant''
+Dice de que tipo es cada uno de los argumentos que se le pasan a la hora de EJECUCION (No de compilacion)
 */
 
 #include<unistd.h>  /* POSIX Standard: 2.10 Symbolic Constants <unistd.h>
