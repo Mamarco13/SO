@@ -1,9 +1,9 @@
 # SO Modulo 2
-##Sesion 1
+##Sesion 1##
 
 Consiste en 4 ejercicios divididos de la siguiente manera:
 
-**Ejercicio1:**Probar la ejecucion de un programa y ejecutar el fichero que da como salida. Está resuelto en el archivo **tarea1.c**
+**Ejercicio1:** Probar la ejecucion de un programa y ejecutar el fichero que da como salida. Está resuelto en el archivo **tarea1.c**
 
 **Ejercicio2:** Implementar un programa que reciba un archivo como argumento y devolverá un archivo salida con el contenido del archivo fraccionado en bloques de 80 bytes. Cuenta con una modificación adicional que non he implementado bien del todo,
 
