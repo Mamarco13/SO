@@ -1,5 +1,5 @@
 # SO Modulo II
-### Modulo 1
+### Sesion 1
 
 Consiste en 4 ejercicios divididos de la siguiente manera:
 
@@ -10,3 +10,7 @@ Consiste en 4 ejercicios divididos de la siguiente manera:
 **Ejercicio3:** Explicar que hace un codigo que nos dan ya hecho. Está resuelto en el archivo **tarea2.c**
 
 **Ejercicio4:** Definir una macro en lenguaje C. (Es solo una linea, hay muchos comentarios como explicación).
+
+
+### Sesion 2
+
