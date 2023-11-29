@@ -1,6 +1,23 @@
 //tarea4.c
 //Trabajo con llamadas al sistema del Subsistema de Procesos "POSIX 2.10 compliant"
 //Prueba el programa tal y como está. Después, elimina los comentarios (1) y pruebalo de nuevo.
+//En la primera llamada ha dado la salida:
+/*./tarea4
+cualquier mensaje de salida
+
+Mensaje previo a la ejecución de fork
+pid= 9350, global= 7, var= 89
+Mensaje previo a la ejecución de fork
+pid= 9349, global= 6, var= 88*/
+//Salida despues de descomentar
+/*./tarea4
+cualquier mensaje de salida
+
+Mensaje previo a la ejecución de fork
+pid= 9495, global= 7, var= 89
+
+pid= 9494, global= 6, var= 88*/
+
 
 #include<sys/types.h>	//Primitive system data types for abstraction of implementation-dependent data types.
 						//POSIX Standard: 2.6 Primitive System Data Types <sys/types.h>
