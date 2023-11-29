@@ -1,3 +1,18 @@
+/*
+    Recorrer la jerarquia de de subdirectorios existentes a partir de uno que se pasa como argumento y devolver 
+    la xuenta de todos aquellos archivos regulares que tengan permiso x para grupo y otros.
+    Ademas tambien devolver los numeros de inodo y la suma total de espacio ocupado por esos archivos
+    Ejemplo de ejecucion y salida:
+        ./buscar <pathname>
+
+        Los i-nodos son:
+        ./a.out 55
+        ./bin/ej 123
+        ./bin/ej2 87
+        ...
+        Existen 24 archivos regulares con permiso x para grupo y otros
+        El tamaño total ocupado por estos archivos es de 2345674 bytes
+*/
 #include <sys/types.h>
 #include <unistd.h>
 #include <sys/stat.h>

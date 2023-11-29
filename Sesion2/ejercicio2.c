@@ -1,3 +1,8 @@
+/*
+    Cambia los permisos de los archivos de un directorio y devuelve los arcgivos con sus permisos antiguos y sus permisos nuevos.
+    Todos los permisos se expresan en octal.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
